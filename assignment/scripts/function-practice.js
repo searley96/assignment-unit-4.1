@@ -28,7 +28,7 @@ function addNumbers( firstNumber, secondNumber ) {
 console.log('Should return 10:', addNumbers(5,5));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( num1, num2, num3){
+function multiplyThree( num1, num2, num3) {
   return num1 * num2 * num3;
 }
 console.log('Should return 125:', multiplyThree(5, 5, 5));
@@ -53,17 +53,31 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
+
+function getLast( array ) {
+ if (array.length > 0) {
+ return array[array.length - 1];
+ } else {
+  return 'Undefined.'
+ }
 }
+
+console.log("should print 3:", getLast([1, 5, 2, 3]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
+function find( value, array ) {
+  for (let i = 0; i < array.length; i++) {
+  if (array[i] === value) {
+  return true;
+  }
+ }
+ return false;
 }
 
+console.log("should print true:", find(5, [1, 2, 5, 2, 3]));
 // ----------------------
 // Stretch Goals
 // ----------------------
