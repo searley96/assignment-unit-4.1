@@ -14,11 +14,11 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName(name) {
+function name() {
   return 'Hello Siv!';
 }
 // Remember to call the function to test
-console.log('Test - should say "Hello Siv!"', helloName());
+console.log('Test - should say "Hello Siv!"', name());
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
@@ -94,19 +94,17 @@ console.log('isFirstLetter - should say true', isFirstLetter('a', 'apple'));
 console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll() {
-  let sum = 0
+//function sumAll() {
+let sum = 0
   // TODO: loop to add items
-  return sum;
-}
+
+
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-newArray = [2, -1, 0, 3, -3];
 
-function returnPositive ()
 
 
 
