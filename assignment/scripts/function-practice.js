@@ -18,7 +18,8 @@ function helloName(name) {
   return 'Hello '+ name + '!'
 }
 // Remember to call the function to test
-console.log('Test - should say "Hello Siv!"', helloName('Siv'));
+message = helloName('Siv');
+console.log('Should say Hello Siv!:', message);
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
